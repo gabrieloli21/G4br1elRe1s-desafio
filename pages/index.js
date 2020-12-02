@@ -76,13 +76,8 @@ export default function Home() {
                     </div>
 
                     {console.log('query:', catalogo[chave].characters)}
-                    {/* <div className="filmeLinha--infosItem" >
-                      <h3>Filme: {a.title} </h3>
-                      <h3>Diretor: {a.director}</h3>
-                      <h3>Produtor: {a.producer}</h3>
-                      <h3>Número do filme: {a.episode_id}</h3>
-                      <h3>Data de lançamento: {a.release_date}</h3> 
-                     </div> */}
+                    
+
 
                   </div>
                 )
