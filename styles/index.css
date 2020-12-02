@@ -1,0 +1,95 @@
+/* definição de alguns padrões na estrutura, como: fonte, cor de fundo, cor da letra */
+body{
+    background: #111;
+    color:#fff;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.areaGeral{
+    margin: 20px 0px 30px 0px;
+   
+}
+
+.areaGeral h1{
+    margin: 0px 0px 0px 30px;
+}
+
+/* overflow-x tudo o que passar da tela na horizontal vai ser cortado */
+.listaFilmeArea{
+    overflow-x: hidden; 
+    padding-left: 30px;
+}
+/* .filmesLinha{
+     width:99999px; 
+    background-color: purple;
+} */
+
+/* Tamanho fixo de cada filme */
+.filmeLinha--item{
+    margin-top: 10px;
+    display: inline-block;
+    width:216px;
+    height:324px;
+    cursor:pointer;
+    /* background-color: aqua; */
+    
+}
+/* no transform foi alterado o valor de 100% da imagem para 90% 
+para que haja espaço entre cada filme, mudou css mas é como se o espaço
+ali ainda estivesse reservado para quando ele está em 100%. 
+O transition foi colcoado para ampliar suavemente o poster */
+.filmeLinha--item img{
+    margin-top: 10px;
+    width:100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+
+}
+/* aqui é adicionado uma apliação quando passa o mouse por cima do poster de algum filme */
+.filmeLinha--item img:hover{
+    transform: scale(1);
+}
+
+.filmeLinha--item h3{
+    font-size: 11px;
+    color: red;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.filmeLinha--infosItem{
+    font-size: 10px;
+    color: red;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+/* colocoando efeitos e melhorando o design da tag a */
+.link a{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    padding:15px 15px;
+    border-radius:15px;
+    text-decoration: none;
+    background-color: rgba(15, 20, 97, 0.925);
+    color:#fff;
+    text-align: center;
+    opacity: 1;
+    transition: all ease 0.2s;
+}
+
+.link a:hover{
+    opacity: .7;
+}
+
+.perfil{
+    display: flex;
+    justify-content: center;
+    background-color:yellow;
+    margin: 10px 0px 10px 0px;
+}
