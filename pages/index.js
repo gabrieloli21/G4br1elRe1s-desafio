@@ -66,9 +66,8 @@ export default function Home() {
                     <div className="link">
                       {/* componente para colocar rota"personagens" na url e recebe um array com os personagens de cada filme*/}
                       <Link href={{
-                        // pathname: '/personagens/'+a.title,
                         pathname: '/personagens/',
-                        query: { personagens: catalogo[chave].characters },
+//                         query: { personagens: catalogo[chave].characters },
                       }}>
 
                         <a className="acesso-personagem">Confira os personagens</a>
